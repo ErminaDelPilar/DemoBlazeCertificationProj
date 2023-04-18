@@ -5,9 +5,11 @@
     <classes>
       <class name="demoblaze.DemoBlazeProject">
         <methods>
+          <include name="testLogin"/>
           <include name="setUp"/>
           <include name="testAddToCart"/>
           <include name="closeBrowser"/>
+          <include name="testPlaceOrder"/>
         </methods>
       </class> <!-- demoblaze.DemoBlazeProject -->
     </classes>
