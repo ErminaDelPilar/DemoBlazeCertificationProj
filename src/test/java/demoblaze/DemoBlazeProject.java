@@ -20,11 +20,11 @@ public class DemoBlazeProject {
  @BeforeClass
  public void setUp() {
 	 System.setProperty("webdriver.chrome.driver","C:\\Users\\ermina\\eclipse-workspace\\CertificationProject\\webdriver\\chromedriver.exe");
-     driver = new ChromeDriver();
+    // driver = new ChromeDriver();
  	
- 	//ChromeOptions options = new ChromeOptions();
-	//options.addArguments("--remote-allow-origins=*");
-	//	driver = new ChromeDriver(options);
+ 	ChromeOptions options = new ChromeOptions();
+	options.addArguments("--headless");
+	driver = new ChromeDriver(options);
 	 
  }
 
